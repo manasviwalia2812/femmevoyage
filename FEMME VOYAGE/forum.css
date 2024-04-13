@@ -1,0 +1,91 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6e6; /* light pink background */
+}
+
+header {
+  background-color: #ff99cc; /* pink header background */
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.3s, text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  opacity: 0.8; /* Reduced opacity on hover */
+}
+
+nav ul li a:active {
+  opacity: 1; /* Increased opacity when clicked */
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #ff99cc; /* pink button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff66a3; /* darker pink on hover */
+}
+
+/* Post styles */
+.post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #333; /* dark gray post title */
+}
+
+.post p {
+  color: #666; /* medium gray post content */
+}
+
+footer {
+  text-align: center;
+  background-color: #ff99cc; /* pink footer background */
+  color: white;
+  padding: 10px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Forum</title>
+  <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+  <header>
+    <h1>Community Forum</h1>
+    <nav>
+      <ul>
+        <li><a href="features.html">Back to Features</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Post form -->
+    <section id="post-form">
+      <h2>Create a New Post</h2>
+      <form id="new-post-form">
+        <label for="post-title">Title:</label>
+        <input type="text" id="post-title" name="post-title" required>
+        <label for="post-content">Content:</label>
+        <textarea id="post-content" name="post-content" rows="5" required></textarea>
+        <button type="submit">Submit Post</button>
+      </form>
+    </section>
+
+    <!-- Post section -->
+    <section id="posts">
+      <h2>Recent Posts</h2>
+      <div id="post-list">
+        <!-- Posts will be dynamically added here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Community Forum</p>
+  </footer>
+
+  <script src="forum.js"></script>
+</body>
+</html>

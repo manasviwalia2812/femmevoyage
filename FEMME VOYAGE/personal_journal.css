@@ -1,0 +1,95 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6e6; /* light pink background */
+}
+
+header {
+  background-color: #ff99cc; /* pink header background */
+  padding: 20px;
+  color: white; /* Text color */
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.3s, text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  opacity: 0.8; /* Reduced opacity on hover */
+}
+
+nav ul li a:active {
+  opacity: 1; /* Increased opacity when clicked */
+}
+
+main {
+  padding: 20px;
+}
+
+/* Styles for journal entry */
+.journal-entry {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.journal-entry h2 {
+  text-align: center;
+  color: #ff99cc; /* Pink color for headings */
+}
+
+.journal-entry form {
+  display: flex;
+  flex-direction: column;
+}
+
+.journal-entry label {
+  margin-bottom: 10px;
+}
+
+.journal-entry input[type="date"],
+.journal-entry textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.journal-entry button {
+  padding: 10px 20px;
+  background-color: #ff99cc; /* pink button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.journal-entry button:hover {
+  background-color: #ff66a3; /* darker pink on hover */
+}
+
+footer {
+  text-align: center;
+  background-color: #ff99cc; /* pink footer background */
+  color: white;
+  padding: 10px;
+}

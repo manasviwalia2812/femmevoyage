@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6e6; /* light pink background */
+}
+
+header {
+  background-color: #ff99cc; /* pink header background */
+  padding: 20px;
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Align items to the start and end of the header */
+  position: fixed; /* Fixed position */
+  top: 0; /* Stick to the top */
+  width: 100%; /* Full width */
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox */
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 80px 20px 100px; /* Adjust padding to accommodate the fixed header and footer */
+}
+
+.features {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for "Go to Personal Journal" link */
+.feature a {
+  display: inline-block;
+  color: #ff99cc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.feature a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.feature a:active {
+  opacity: 1; /* Reduced opacity when clicked */
+}
+
+
+.features h2 {
+  text-align: center;
+  color: #ff99cc; /* Pink color for headings */
+}
+
+.feature {
+  margin-top: 40px;
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove default underline */
+  color: #000; /* Set default text color */
+  transition: opacity 0.3s, border-bottom-color 0.3s; /* Smooth transition for opacity and underline color */
+}
+
+/* Style for navigation links on hover */
+nav ul li a:hover {
+  opacity: 0.7; /* Reduce opacity on hover */
+  border-bottom: 2px solid #000; /* Add bottom border on hover */
+}
+
+.feature h3 {
+  color: #ff99cc; /* Pink color for feature titles */
+}
+
+.feature p {
+  color: #555; /* Dark gray color for feature descriptions */
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  background-color: #ff99cc; /* pink footer background */
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px; /* Add margin above footer */
+  height: 60px; /* Reduced height for the footer */
+}
+/* CSS for the header */
+header {
+  background-color: #ff99cc; /* pink header background */
+  padding: 10px; /* Reduce the padding */
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Align items to the start and end of the header */
+  position: fixed; /* Fixed position */
+  top: 0; /* Stick to the top */
+  width: 100%; /* Full width */
+}
+
+/* CSS for the logo */
+.logo {
+  max-width: 100px; /* Reduce the maximum width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0; /* Remove margin */
+}
+
+/* CSS for the header navigation */
+nav {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+}
+/* CSS code goes here */
+
+.hidden {
+  display: none;
+}

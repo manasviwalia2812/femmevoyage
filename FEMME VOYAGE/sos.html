@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency SOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .sos-button {
+            padding: 15px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background-color: #dc3545;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .sos-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+<button class="sos-button" onclick="sendSOS()">Emergency SOS</button>
+
+<script>
+    function sendSOS() {
+        // You can add your emergency action here
+        alert('Emergency SOS sent! Please call 911.');
+        
+        // Alternatively, you can also add code to send an SMS or make a call
+        // For example:
+        // sendSMS("Emergency SOS from MyWebsite!");
+    }
+
+    // Function to send an SMS (this is just a placeholder, you'll need to implement this)
+    function sendSMS(message) {
+        // Implement SMS sending code here
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6e6; /* light pink background */
+}
+
+header {
+  background-color: #ff99cc; /* pink header background */
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Styles for signup page */
+.signup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup h2 {
+  color: #ff99cc;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="checkbox"],
+button {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff99cc;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #ff66a3; /* darker pink on hover */
+}
+
+/* Styles for features page */
+.features {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.features h2 {
+  text-align: center;
+  color: #ff99cc; /* Pink color for headings */
+}
+
+.feature {
+  margin-top: 40px;
+}
+
+.feature h3 {
+  color: #ff99cc; /* Pink color for feature titles */
+}
+
+.feature p {
+  color: #555; /* Dark gray color for feature descriptions */
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  background-color: #ff99cc; /* pink footer background */
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
