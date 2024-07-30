@@ -4,58 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Girls' Hostels/PGs in Jaipur</title>
-    <style>
-        /* Add your CSS styles here */
-        /* Add your CSS styles here */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #ff99cc;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    padding: 20px;
-}
-
-.hostel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Align items with space between */
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.hostel h2 {
-    color: #ff6699;
-}
-
-.hostel img {
-    max-width: 200px;
-    border-radius: 5px;
-}
-
-li a{
-  color:white;
-}
-
-        
-    </style>
+    <link rel="stylesheet" href="CSS/hostel.css">
+    <link rel="stylesheet" href="CSS/forum.css">
 </head>
 <body>
     <header>
-        <h1>Girls' Hostels/PGs in Jaipur</h1>
-        <li><a href="features.html">Back to Features</a></li>
+        <h1>Hostels/Girls PG in Jaipur</h1>
+        <div class="nav-container">
+            <nav class="left-nav">
+            <ul>
+                <li><a href="features.html">Back to Features</a></li>
+            </ul>
+            </nav>
+            <nav class="right-nav">
+            <ul>
+                <li><a href="features.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" onclick="navigateToContact()">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -67,7 +35,7 @@ li a{
                 <p>Rating: 4.2/5</p>
                 <p> for more information visit <a href="https://www.magicbricks.com/propertyDetail/hello-namaste-india-pg-mission-compound-in-jaipur&pgid=4d42343236323533677261646532" class="HELLO-NAMASTE-INDIA-link" target="_blank">hello namaste india</a> </p>
             </div>
-            <img src="hostel1.jpeg" alt="Hostel 1 Image">
+            <img src="images/hostels/hostel1.jpeg" alt="Hostel 1 Image">
         </div>
 
         <div class="hostel">
@@ -78,7 +46,7 @@ li a{
                 <p>Rating: 4.6/5</p>
                 <p> for more information visit <a href="https://www.magicbricks.com/propertyDetail/unique-girls-pg-vaishali-nagar-in-jaipur&pgid=4d423237353937677261646532" class="HELLO-NAMASTE-INDIA-link" target="_blank">unique girls pg</a> </p>
             </div>
-            <img src="hostel2.jpg" alt="Hostel 2 Image">
+            <img src="images/hostels/hostel2.jpg" alt="Hostel 2 Image">
         </div>
         <div class="hostel">
           <div>
@@ -88,10 +56,11 @@ li a{
               <p>Rating: 4.4/5</p>
               <p> for more information visit <a href="https://www.srikishnagirlspg.com/" class="HELLO-NAMASTE-INDIA-link" target="_blank">shri krishna girls pg</a> </p>
           </div>
-          <img src="hostel3.webp" alt="Hostel 2 Image">
+          <img src="images/hostels/hostel3.webp" alt="Hostel 2 Image">
       </div>
         <!-- Add more hostel entries here -->
 
     </main>
+    <script src="scripts/forum.js"></script>
 </body>
 </html>

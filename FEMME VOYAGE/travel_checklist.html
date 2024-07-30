@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Checklist</title>
-    <link rel="stylesheet" href="travel-checklist.css">
+    <link rel="stylesheet" href="CSS/travel-checklist.css">
+    <link rel="stylesheet" href="CSS/forum.css">
 </head>
 <body>
     <header>
         <h1>Travel Checklist</h1>
-        <nav>
+        <div class="nav-container">
+          <nav class="left-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+              <li><a href="features.html">Back to Features</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+          <nav class="right-nav">
+            <ul>
+              <li><a href="features.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#" onclick="navigateToContact()">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
     <main>
         <section>
@@ -97,5 +105,6 @@
     <footer>
         <p>&copy; 2024 Travel Planner</p>
     </footer>
+    <script src="scripts/forum.js"></script>
 </body>
 </html>

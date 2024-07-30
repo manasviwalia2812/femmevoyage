@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fef0f0;
+}
+
+header {
+  background-color: #ff99cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.location {
+  background-color: white; /* White background for each section */
+  border-radius: 10px;
+  margin-bottom: 20px; /* Add bottom margin between sections */
+  padding: 20px;
+  line-height: 1.6; /* Adjust line height */
+}
+
+.location h2 {
+  color: #ff6699;
+  margin-bottom: 10px;
+  margin-top: 0; /* Add top margin to the heading */
+}
+
+.location img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block; /* Ensure the image is a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.location ul {
+  margin-left: 20px; /* Adjust margin for the list */
+  margin-bottom: 10px; /* Add bottom margin to the list */
+}
+
+.location li {
+  margin-bottom: 5px; /* Add bottom margin to list items */
+}

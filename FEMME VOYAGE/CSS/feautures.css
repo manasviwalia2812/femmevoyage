@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6e6; /* light pink background */
+  padding-top:20px;
+}
+
+header {
+  background-color: #ff99cc; /* pink header background */
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure header stays on top */
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  max-width: 60px;
+  cursor: pointer;
+}
+
+header h1 {
+  color: white;
+  margin: 0 20px;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.3s, border-bottom-color 0.3s;
+}
+nav ul li a:hover {
+  opacity: 0.7; 
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: row;
+  }
+
+  h1 {
+    margin: 0 20px;
+    font-size: 20px;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+main {
+  padding: 80px 20px 100px; /* Adjust padding to accommodate the fixed header and footer */
+}
+
+.features {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for "Go to Personal Journal" link */
+.feature a {
+  display: inline-block;
+  color: #ff99cc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.feature a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.feature a:active {
+  opacity: 1; /* Reduced opacity when clicked */
+}
+
+
+.features h2 {
+  text-align: center;
+  color: #ff99cc; /* Pink color for headings */
+}
+
+.feature {
+  margin-top: 40px;
+}
+
+.feature h3 {
+  color: #ff99cc; /* Pink color for feature titles */
+}
+
+.feature p {
+  color: #555; /* Dark gray color for feature descriptions */
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  background-color: #ff99cc; /* pink footer background */
+  padding: 10px;
+  bottom: 0;
+  margin-top: 20px; /* Add margin above footer */
+  height: 60px; /* Reduced height for the footer */
+}
+.footer-contents{
+  display: flex;
+  justify-content:space-between;
+  margin-top:40px;
+}
+.footer-address{
+  display: flex;
+  flex-direction: column;
+  }
+.form-content{
+  display: flex;
+  flex-direction: column;
+}
+.form-container{
+  border: 0px solid black;
+  padding: 30px 30px;
+  }
+.contact-us {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below header */
+  text-align: center; /* Center the header */
+}
+
+/* Style for the form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+}
+
+/* Style for form input fields */
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style for the textarea */
+.message-me {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Allow vertical resizing */
+  font-size: 16px;
+}
+
+/* Style for the submit button */
+.message-btn {
+  margin-top:25px ;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff99cc; /* Matching with header color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.message-btn:hover {
+  background-color: #ff66b2; /* Darker pink for hover effect */
+}
+@media (max-width: 700px) {
+  .footer-contents {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align content */
+    margin-top: 40px;
+  }
+
+  .footer-address,
+  .form-content {
+    text-align: center; /* Center text for both sections */
+    margin-bottom: 20px; /* Space below each section */
+  }
+
+  .form-container {
+    border: 0; /* Remove border */
+    padding: 30px; /* Adjust padding */
+  }
+
+  .contact-us {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below header */
+  }
+
+  /* Style for form input fields */
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align form inputs */
+  }
+
+  .form-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; /* Ensure full width */
+  }
+
+  /* Style for the textarea */
+  .message-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align textarea and button */
+  }
+
+  textarea {
+    width: 100%; /* Ensure full width */
+  }
+
+  .message-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff99cc; /* Matching with header color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .message-btn:hover {
+    background-color: #ff66b2; /* Darker pink for hover effect */
+  }
+}

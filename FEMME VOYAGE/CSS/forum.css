@@ -1,0 +1,194 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6e6; /* light pink background */
+}
+
+header {
+  background-color: #ff99cc; /* pink header background */
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.3s, text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  opacity: 0.8; /* Reduced opacity on hover */
+}
+
+nav ul li a:active {
+  opacity: 1; /* Increased opacity when clicked */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Space between the two nav elements */
+  align-items: center; /* Center items vertically */
+  margin-top: 10px; /* Space between title and nav */
+}
+
+/* Styling for left-side navigation */
+.left-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-nav ul li {
+  display: inline;
+}
+
+.left-nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px; /* Space around the link */
+}
+
+/* Styling for right-side navigation */
+.right-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right-nav ul li {
+  display: inline;
+  margin-left: 15px; /* Space between menu items */
+}
+
+.right-nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px; /* Space around the link */
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column; /* Stack the navigation vertically on small screens */
+    align-items: center; /* Center align items */
+  }
+
+  header h1 {
+    margin-bottom: 10px; /* Space between title and navigation */
+  }
+
+  .left-nav ul,
+  .right-nav ul {
+    display: block; /* Stack links vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .left-nav ul li,
+  .right-nav ul li {
+    display: block; /* Stack list items vertically */
+    margin: 5px 0; /* Space between items */
+  }
+
+  .right-nav ul li {
+    margin-left: 0; /* Remove left margin on small screens */
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-content {
+  max-width: 1000px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center align the form container */
+  padding: 20px;
+  background-color: #fff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px; /* Space between elements */
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #ff99cc; /* pink button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff66a3; /* darker pink on hover */
+}
+
+@media (max-width: 600px) {
+  .form-content {
+    padding: 15px; /* Adjust padding for smaller screens */
+    width: 350px; /* Full width on small screens */
+    margin-right: 30px;;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 320px; /* Ensure input and textarea take full width */
+  }
+}
+
+/* Post styles */
+.post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #333; /* dark gray post title */
+}
+
+.post p {
+  color: #666; /* medium gray post content */
+}
+
+footer {
+  text-align: center;
+  background-color: #ff99cc; /* pink footer background */
+  color: white;
+  padding: 10px;
+}

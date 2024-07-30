@@ -4,67 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Guide: Jaipur</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fef0f0;
-        }
-
-        header {
-            background-color: #ff99cc;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        .location {
-            background-color: white; /* White background for each section */
-            border-radius: 10px;
-            margin-bottom: 20px; /* Add bottom margin between sections */
-            padding: 20px;
-            line-height: 1.6; /* Adjust line height */
-        }
-
-        .location h2 {
-            color: #ff6699;
-            margin-bottom: 10px;
-            margin-top: 0; /* Add top margin to the heading */
-        }
-
-        .location img {
-            max-width: 100%;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            display: block; /* Ensure the image is a block element */
-            margin: 0 auto; /* Center the image horizontally */
-        }
-
-        .location ul {
-            margin-left: 20px; /* Adjust margin for the list */
-            margin-bottom: 10px; /* Add bottom margin to the list */
-        }
-
-        .location li {
-            margin-bottom: 5px; /* Add bottom margin to list items */
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/localguide.css">
+    <link rel="stylesheet" href="CSS/forum.css">
 </head>
 <body>
-    <header>
-        <h1>Local Guide: Jaipur</h1>
-    </header>
+  <header>
+    <h1>Local Guide</h1>
+    <div class="nav-container">
+      <nav class="left-nav">
+        <ul>
+          <li><a href="features.html">Back to Features</a></li>
+        </ul>
+      </nav>
+      <nav class="right-nav">
+        <ul>
+          <li><a href="features.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" onclick="navigateToContact()">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <main>
         <div class="location" > <!-- Light gray background -->
             <h2>Tourist Locations in Jaipur</h2>
             <p>Jaipur, the Pink City, is known for its rich history and stunning architecture. Some must-visit tourist locations include:</p>
-            <img src="jaipur.jpg" alt="Tourist Locations">
+            <img src="images/localGuide/jaipur.jpg" alt="Tourist Locations">
             <ul>
                 <li style="color:#ff6699; font-size:20px;">Jaigarh Fort
                 <p style="color:black;font-size:17px;"> Known for its massive cannon, Jaigarh Fort offers spectacular views of the Aravalli hills and the surrounding landscape.
@@ -84,7 +50,7 @@
         <div class="location"> <!-- Light pink background -->
             <h2 >Eating Spots</h2>
             <p>Experience the vibrant flavors of Jaipur at these popular eating spots:</p>
-            <img src="eating.jpg" alt="Eating Spots">
+            <img src="images/localGuide/eating.jpg" alt="Eating Spots">
             <ul>
                 <li style="color:#ff6699; font-size:20px;">Chokhi Dhani
                   <p style="color:black;font-size:17px;"> Chokhi Dhani is a traditional Rajasthani 
@@ -109,7 +75,7 @@
 
         <div class="location"> <!-- Light gray background -->
             <h2>Transport Facilities</h2>
-            <img src="transport.jpg" alt="Transport Facilities">
+            <img src="images/localGuide/transport.jpg" alt="Transport Facilities">
             <p>Getting around Jaipur is convenient with various transport options:</p>
             <ul>
               <li style="color:#ff6699; font-size:20px;">Jaipur Metro
@@ -128,5 +94,6 @@
             </ul>
         </div>
     </main>
+    <script src="scripts/forum.js"></script>
 </body>
 </html>

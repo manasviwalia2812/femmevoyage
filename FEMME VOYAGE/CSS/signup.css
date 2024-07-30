@@ -7,27 +7,62 @@ body {
 
 header {
   background-color: #ff99cc; /* pink header background */
-  padding: 20px;
+  padding: 10px;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  max-width: 60px;
 }
 
 header h1 {
-  margin: 0;
   color: white;
+  margin: 0 20px;
+  font-size: 24px;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  margin: 0;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  li {
+    margin: 10px 0;
+  }
 }
 
 main {

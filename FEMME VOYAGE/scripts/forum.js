@@ -2,6 +2,10 @@
 const postForm = document.getElementById('new-post-form');
 const postList = document.getElementById('post-list');
 
+function navigateToContact() {
+  window.location.href = "./features.html#footer";
+}
+
 // Function to handle form submission
 function submitPost(event) {
   event.preventDefault(); // Prevent default form submission

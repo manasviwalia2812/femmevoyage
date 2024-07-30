@@ -4,81 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safety Tips for Female Travelers</title>
-    <link rel="stylesheet" href="safety.css">
+    <link rel="stylesheet" href="CSS/safety.css">
+    <link rel="stylesheet" href="CSS/forum.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #ff99cc;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        .content-container {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #ff99cc;
-            margin-top: 0;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #ff99cc;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .sos-button {
-            padding: 15px 25px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #fff;
-            background-color: #dc3545;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-            display: block;
-            margin: 20px auto;
-            text-align: center;
-            width: 200px;
-        }
-
-        .sos-button:hover {
-            background-color: #c82333;
-        }
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>Safety Tips for Female Travelers</h1>
-        <nav>
+        <h1>Safety Tips For Female Travelers</h1>
+        <div class="nav-container">
+          <nav class="left-nav">
             <ul>
-                <li><a href="features.html">Back to Features</a></li>
+              <li><a href="features.html">Back to Features</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+          <nav class="right-nav">
+            <ul>
+              <li><a href="features.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#" onclick="navigateToContact()">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     <main>
         <div class="content-container">
             <h2 style="color:black;">BEFORE YOU GO:</h2>
@@ -119,5 +68,6 @@
             // Implement SMS sending code here
         }
     </script>
+    <script src="scripts/forum.js"></script>
 </body>
 </html>

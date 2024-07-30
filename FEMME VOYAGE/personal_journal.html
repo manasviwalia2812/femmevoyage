@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Journal</title>
-  <link rel="stylesheet" href="personal_journal.css">
+  <link rel="stylesheet" href="CSS/personal_journal.css">
 </head>
 <body>
   <header>
     <h1>Personal Journal</h1>
-    <nav>
-      <ul>
-        <li><a href="features.html">Back to Features</a></li>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <nav class="left-nav">
+        <ul>
+          <li><a href="features.html">Back to Features</a></li>
+        </ul>
+      </nav>
+      <nav class="right-nav">
+        <ul>
+          <li><a href="features.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" onclick="navigateToContact()">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="journal-entry">
@@ -30,5 +39,6 @@
   <footer>
     <p>&copy; 2024 FemmeVoyage</p>
   </footer>
+  <script src="scripts/forum.js"></script>
 </body>
 </html>

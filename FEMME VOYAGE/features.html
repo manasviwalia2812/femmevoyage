@@ -4,27 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FemmeVoyage Features</title>
-  <link rel="stylesheet" href="feautures.css">
+  <link rel="stylesheet" href="CSS/feautures.css">
 </head>
 <body>
   <header>
-    <!-- Title -->
-    <h1>FemmeVoyage</h1>
-    <!-- Logo -->
-    <img src="logo.png" alt="FemmeVoyage Logo" class="logo">
-    <!-- Navigation -->
     <nav>
-      <ul>
-        <li><a style="color:white" href="#">Home</a></li>
-        <li><a style="color:white" href="#">About</a></li>
-        <li><a style="color:white" href="#">Contact</a></li>
-      </ul>
+      <div class="header">
+        <img src="images/icons/logo.png" alt="FemmeVoyage Logo" class="logo">
+        <h1>FemmeVoyage</h1>
+        <ul>
+          <li><a href="#feautures">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <p id="additional-info" class="hidden">Team 404 Found developed this website within 4 hours to make a contribution to make solo female traveler's life easy.</p>
-  
   <main>
-    <section class="features">
+    <section id="feautures" class="features">
       <h2>Explore FemmeVoyage</h2>
       <div class="feature">
         <h3><a href="personal_journal.html">Personal Journal</a></h3>
@@ -56,8 +53,45 @@
       </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2024 FemmeVoyage</p>
+  <footer id="footer">
+    <div style="text-align: center;color: white; font-size: 25px; margin:20px;">
+      CONTACT INFO
+    </div> 
+    <div> 
+      <div class="footer-contents">
+        <div class="footer-address">
+          <div style="margin:20px;"><b>Address :</b></div>
+          <div>
+            Manipal University Jaipur<br>
+            Jaipur-Ajmer Express Highway, Dehmi Kalan<br>
+            Near GVK Toll Plaza, Jaipur - 303007<br>
+            Rajasthan<br>
+            India 
+          </div>      
+        </div>
+  
+        <div class="form-content">
+          <div class="contact-us">
+            <b>Contact us</b>
+          </div>
+          <form class="row g-3 form-container" target="_blank" method="POST" id="mG61Hd">
+            <div class="form-input">
+              <label for="inputname" class="form-label">Name</label>
+              <input type="text" name="entry.327919065" class="form-control" id="inputname" placeholder="Name">
+            </div>
+            <div class="form-input">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" name="entry.2075636910" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="message-me">
+              <textarea rows="4" cols="50" name="entry.1147404907" placeholder="Enter your message here..."></textarea>
+              <button type="submit" class="message-btn">Message me</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <p>&copy; 2024 FemmeVoyage</p>
+    </div>
   </footer>
 </body>
 </html>
