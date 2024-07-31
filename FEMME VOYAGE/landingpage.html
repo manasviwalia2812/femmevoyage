@@ -72,38 +72,44 @@
   </section>
 
   <footer id="contact">
-    <h2>Contact Us</h2>
-    <div class="footer-contents">
-      <div class="footer-address">
-        <div><b>Address:</b></div>
-        <div>
-          <p>Manipal University Jaipur</p>
-          <p>Jaipur-Ajmer Express Highway, Dehmi Kalan</p>
-          <p>Near GVK Toll Plaza, Jaipur - 303007, Rajasthan, India</p>
+    <div style="text-align: center;color: white; font-size: 25px; margin:20px;">
+      CONTACT INFO
+    </div> 
+    <div> 
+      <div class="footer-contents">
+        <div class="footer-address">
+          <div style="margin:20px;"><b>Address :</b></div>
+          <div>
+            Manipal University Jaipur<br>
+            Jaipur-Ajmer Express Highway, Dehmi Kalan<br>
+            Near GVK Toll Plaza, Jaipur - 303007<br>
+            Rajasthan<br>
+            India 
+          </div>      
+        </div>
+  
+        <div class="form-content">
+          <div class="contact-us">
+            <b>Contact us</b>
+          </div>
+          <form class="row g-3 form-container" target="_blank" method="POST" id="mG61Hd">
+            <div class="form-input">
+              <label for="inputname" class="form-label">Name</label>
+              <input type="text" name="entry.327919065" class="form-control" id="inputname" placeholder="Name">
+            </div>
+            <div class="form-input">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" name="entry.2075636910" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="message-me">
+              <textarea rows="4" cols="50" name="entry.1147404907" placeholder="Enter your message here..."></textarea>
+              <button type="submit" class="message-btn">Message me</button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="form-content">
-        <div class="contact-us">
-          <b>Contact us</b>
-        </div>
-        <form class="form-container" target="_blank" method="POST" id="contact-form">
-          <div class="form-input">
-            <label for="inputname" class="form-label">Name:</label>
-            <input type="text" name="entry.327919065" class="form-control" id="inputname" placeholder="Name" required>
-          </div>
-          <div class="form-input">
-            <label for="inputEmail4" class="form-label">Email:</label>
-            <input type="email" name="entry.2075636910" class="form-control" id="inputEmail4" placeholder="Email" required>
-          </div>
-          <div class="message-me">
-            <label for="message" class="form-label">Message:</label>
-            <textarea rows="4" cols="50" name="entry.1147404907" class="form-control" id="message" placeholder="Enter your message here..." required></textarea>
-            <button type="submit" class="message-btn">Send Message</button>
-          </div>
-        </form>
-      </div>
+      <p>&copy; 2024 FemmeVoyage</p>
     </div>
-    <p>&copy; 2024 FemmeVoyage</p>
   </footer>
 
   <script>
@@ -111,10 +117,15 @@
       const nav = document.querySelector('nav ul');
       nav.classList.toggle('active');
     }
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('active');
+    });
 
     function navigateToContact() {
       document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
     }
+
   </script>
 </body>
 </html>
