@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FemmeVoyage - Empowering Solo Female Travelers</title>
   <link rel="stylesheet" href="CSS/landingpage.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="CSS/gallery.css">
 </head>
 <body>
   <header>
@@ -38,40 +42,82 @@
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About FemmeVoyage</h2>
     <p>FemmeVoyage is dedicated to empowering solo female travelers by providing resources, support, and a community. Our mission is to make travel safe and enjoyable for women around the world.</p>
   </section>
 
-  <section id="features">
+  <section id="features" data-aos="fade-up">
     <h2>Features</h2>
-    <div class="feature-list">
-      <div class="feature-item">
-        <h3>Community Forum</h3>
+    <div class="owl-carousel owl-theme">
+      <div class="item feature-item">
+        <h3><a href="forum.html">Community Forum</a></h3>
         <p>Connect with fellow travelers, share experiences, and get advice.</p>
       </div>
-      <div class="feature-item">
-        <h3>Local Guides</h3>
+      <div class="item feature-item">
+        <h3><a href="localguide.html">Local Guides</a></h3>
         <p>Find reliable local guides to help you navigate new destinations.</p>
       </div>
-      <div class="feature-item">
-        <h3>Safety Tips</h3>
+      <div class="item feature-item">
+        <h3><a href="safety.html">Safety Tips</a></h3>
         <p>Access valuable safety tips tailored for solo female travelers.</p>
       </div>
-      <div class="feature-item">
-        <h3>Travel Checklist</h3>
+      <div class="item feature-item">
+        <h3><a href="travel_checklist.html">Travel Checklist</a></h3>
         <p>Keep track of your travel essentials with our comprehensive checklist.</p>
+      </div>
+      <div class="item feature-item">
+        <h3>See More Features!</h3>
+        <a href="features.html" class="btn feature-button">More!</a>
       </div>
     </div>
   </section>
 
-  <section id="community">
+  <section id="community" data-aos="fade-up">
     <h2>Join Our Community</h2>
     <p>Become a part of our supportive community and share your travel stories.</p>
-    <a href="community.html" class="btn">Join Now</a>
+    <a href="signup.html" class="btn join-button">Join Now</a>
   </section>
 
-  <footer id="contact">
+  <section id="Gallery" data-aos="fade-up">
+    <h1>Gallery</h1>
+    <div class="container">
+      <div class="card-carousel">
+        <div class="card" id="1">
+          <div class="image-container"></div>
+          <p>Paris Mornings!</p>
+        </div>
+        <div class="card" id="2">
+          <div class="image-container"></div>
+          <p>Escape to paradise 🏝️</p>
+        </div>
+        <div class="card" id="3">
+          <div class="image-container"></div>
+          <p>Dive into adventures!</p>
+        </div>  
+        <div class="card" id="4">
+          <div class="image-container"></div>
+          <p>Experience the magic of breathtaking sunsets</p>
+        </div>
+        <div class="card" id="5">
+          <div class="image-container"></div>
+          <p>"Enchanting Udaipur: Royal Wanderlust"</p>
+        </div>
+        <div class="card" id="6">
+          <div class="image-container"></div>
+          <p>Journeys Beyond Horizons ✈️</p>
+        </div>
+        <div class="card" id="7">
+          <div class="image-container"></div>
+          <p>Discover the World, Solo Style</p>
+        </div>
+      </div>
+      <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+    </div>
+
+  </section>
+
+  <footer id="contact" data-aos="fade-up">
     <div style="text-align: center;color: white; font-size: 25px; margin:20px;">
       CONTACT INFO
     </div> 
@@ -127,5 +173,41 @@
     }
 
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({
+        duration: 1000, // Duration of animation
+        easing: 'ease-in-out', // Easing function
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop:true,            //if no loop, it doesnt go back to the first image again
+      margin:10,
+      nav:true,             //for arrows
+      dots:false,           //for dots
+      autoplay:false,
+      autoplayTimeout:3000,   //3 seconds
+      autoplayHoverPause:false,
+      stagePadding:50,        //you can see little bit of the next image
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:4
+          }
+      }
+    })
+  </script>
+  <script src="scripts/landingpage.js"></script>
 </body>
 </html>

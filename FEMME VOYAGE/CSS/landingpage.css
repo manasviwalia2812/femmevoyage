@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: rgb(251, 250, 248);
 }
 
 header {
@@ -91,6 +92,26 @@ nav ul li a:hover {
   }
 }
 
+@keyframes height {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes left {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .hero-content {
   display: flex;
@@ -109,6 +130,7 @@ nav ul li a:hover {
   background-color: rgb(251, 250, 248);
   position: relative;
   transition: height 0.3s ease-in-out;
+  animation: height 1s ease-in-out;
 }
 
 .hero-content-text{
@@ -116,6 +138,7 @@ nav ul li a:hover {
   flex-direction:column;
   align-items: start;
   margin-left:20px;
+  animation: left 1.5s ease-in-out;
 }
 
 .hero-content h2 {
@@ -178,22 +201,42 @@ nav ul li a:hover {
 section {
   padding: 60px 20px;
   text-align: center;
+  max-width: 1200px;
 }
 
-.feature-list {
+/* .feature-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
+} */
 
+.owl-carousel .item {
+  height: 300px; /* Fixed height for uniformity */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+  overflow: hidden; /* Hide any overflow content */
+}
+a{
+  text-decoration: none;
+  color:black;
+}
 .feature-item {
   background-color: #ffe6f2;
   padding: 20px;
-  margin: 10px;
+  margin: 50px;
   border-radius: 10px;
   flex: 1;
   min-width: 200px;
   max-width: 300px;
+}
+.feature-button{
+  border:none;
+  margin:0;
+}
+.join-button{
+  margin:0;
 }
 
 footer {
